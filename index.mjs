@@ -10,7 +10,7 @@ import { toString } from "mdast-util-to-string";
  * @param {Object} options - Configuration options
  * @param {string} [options.attributeName='data-title'] - Custom attribute name to use instead of data-title
  * @param {boolean} [options.skipEmptyHeaders=false] - Skip adding attributes for empty headers
- * @param {(import('mdast').TableCell) => string} [options.headerTransform] - Optional function to transform header text before using as attribute.
+ * @param {function(import('mdast').TableCell): string} [options.headerTransform] - Optional function to transform header text before using as attribute.
  */
 export default function remarkTableCellTitles(options = {}) {
   const {
