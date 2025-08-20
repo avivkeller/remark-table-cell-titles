@@ -12,13 +12,11 @@ import { toString } from "mdast-util-to-string";
  * @param {boolean} [options.skipEmptyHeaders=false] - Skip adding attributes for empty headers
  * @param {function(import('mdast').TableCell): string} [options.headerTransform] - Optional function to transform header text before using as attribute.
  */
-export default function remarkTableCellTitles(options = {}) {
-  const {
-    attributeName = "data-title",
-    skipEmptyHeaders = false,
-    headerTransform = (node) => toString(node),
-  } = options;
-
+export default function remarkTableCellTitles({
+  attributeName = "data-title",
+  skipEmptyHeaders = false,
+  headerTransform = (node) => toString(node),
+}) {
   return (tree) => {
     visit(tree, "table", (tableNode) => {
       if (!tableNode.children?.length) return;
