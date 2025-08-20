@@ -79,9 +79,9 @@ remark().use(remarkTableCellTitles, { skipEmptyHeaders: true });
 ### headerTransform
 
 Type: `Function`  
-Default: `(node) => toString(text)`
+Default: `(node) => toString(node)`
 
-Transform header text before using it as an attribute value.
+Transform header node before using it as an attribute value.
 
 ```js
 remark().use(remarkTableCellTitles, {
