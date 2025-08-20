@@ -1,6 +1,6 @@
 {
   "name": "remark-table-cell-titles",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Remark plugin that adds data-title attributes to table cells for responsive tables",
   "type": "module",
   "main": "index.mjs",
