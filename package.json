@@ -1,0 +1,42 @@
+{
+  "name": "remark-table-cell-titles",
+  "version": "1.0.0",
+  "description": "Remark plugin that adds data-title attributes to table cells for responsive tables",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "remark",
+    "remark-plugin",
+    "markdown",
+    "tables",
+    "responsive",
+    "data-title"
+  ],
+  "author": "Aviv Keller <me@aviv.sh>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avivkeller/remark-table-cell-titles.git"
+  },
+  "dependencies": {
+    "mdast-util-to-string": "^4.0.0",
+    "unist-util-visit": "^5.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "dedent": "^1.6.0",
+    "eslint": "^9.33.0",
+    "prettier": "^3.6.2",
+    "remark": "^15.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-html": "^16.0.1",
+    "remark-parse": "^11.0.0",
+    "vitest": "^3.2.4"
+  }
+}
